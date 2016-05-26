@@ -5,6 +5,10 @@
 class MObject{
 	protected $_data = array();
 	
+	public function __construct($initialData){
+		$this->_data = $initialData;
+	}
+	
 	public function setData($key,$value=null){
 		if(is_array($key)){
 			this->_data = $key; 
